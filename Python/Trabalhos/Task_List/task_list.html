@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task List</title>
+</head>
+<body>
+    <h1>Welcome to the task list!</h1>
+
+    <div id="menu">
+        <p>titulo da task list</p>
+    </div>
+
+    <div id="task-form">
+        <h3>Add a task</h3>
+        <input type="text" id="task-input" placeholder="Insert a task">
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div id="task-list">
+        <h3>Task List</h3>
+        <ul id="tasks">
+            <!-- Aqui vamos adicionar as tarefas dinamicamente -->
+        </ul>
+    </div>
+
+    <script>
+        // Array para armazenar as tarefas
+        var tasks = [];
+
+        // Função para adicionar uma nova tarefa
+        function addTask() {
+            var taskInput = document.getElementById("task-input");
+            var taskName = taskInput.value;
+
+            if (taskName.trim() !== "") {
+                tasks.push(taskName);
+                renderTaskList();
+                taskInput.value = "";
+            }
+        }
+
+        // Função para renderizar a lista de tarefas
+        function renderTaskList() {
+            var taskList = document.getElementById("tasks");
+            taskList.innerHTML = "";
+
+            tasks.forEach(function(task) {
+                var li = document.createElement("li");
+                li.textContent = task;
+                taskList.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
