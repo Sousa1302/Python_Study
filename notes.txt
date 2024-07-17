@@ -1,0 +1,5 @@
+'' 		-> Means that an empty string was created 
+''.join  	-> String Method used for concatenation of all the elements of a list
+
+random.choice(list) -> Returns an random value from that list
+
