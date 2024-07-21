@@ -3,3 +3,22 @@
 
 random.choice(list) -> Returns an random value from that list
 
+######################################################################################################################################################################################
+
+Tuple = ("Orange", "Tomato", "Banana")		-> Can`t be modified ; Can have repeated values  
+List = ["Orange", "Tomato", "Banana"]`		-> Can be modified ; Can have repeated values 
+Dictionary = {					-> Can be modified ; Each key needs to be unique but the values can be repeated  
+  "Mike" : 17,
+  "John" : 25,
+  "Carl" : 21
+}
+
+######################################################################################################################################################################################
+
+For loops - Syntax
+
+for item in sequence:
+  #execute block of code
+  
+item - variable that takes the value of the next element in the sequence.
+sequence - collection ( list, tuple, string, or range) being iterated over.
