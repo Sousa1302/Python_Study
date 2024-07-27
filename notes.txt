@@ -22,3 +22,18 @@ for item in sequence:
   
 item - variable that takes the value of the next element in the sequence.
 sequence - collection ( list, tuple, string, or range) being iterated over.
+
+######################################################################################################################################################################################
+
+break		-> It will break the loop
+pass 		-> Nothing will happen
+continue 	-> It will skip that value
+
+ex:
+while b < 10:
+    b += 1
+    if b == 9:
+        continue        # When it gets to 3 it will skip it and go to 4
+    print(b)
+print() 
+
